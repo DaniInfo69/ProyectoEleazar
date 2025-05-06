@@ -1,0 +1,15 @@
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\bin\Debug\Restaurante.exe.config
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\bin\Debug\Restaurante.exe
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\bin\Debug\Restaurante.pdb
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.AssemblyReference.cache
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Properties.Resources.resources
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.GenerateResource.cache
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.csproj.CoreCompileInputs.cache
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.exe
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Clientes.resources
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Empleados.resources
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Comandas.resources
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Inicio.resources
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Puestos.resources
+C:\Users\Alexi\source\repos\Restaurante\Restaurante\obj\Debug\Restaurante.Form1.resources

@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\alexi\\source\\repos\\restaurante\\restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|C:\\Users\\Alexi\\source\\repos\\Restaurante\\restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|C:\\Users\\Alexi\\source\\repos\\Restaurante\\restaurante\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|C:\\Users\\Alexi\\source\\repos\\Restaurante\\restaurante\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|C:\\Users\\Alexi\\source\\repos\\Restaurante\\restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|C:\\Users\\Alexi\\source\\repos\\Restaurante\\restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\alexi\\source\\repos\\restaurante\\restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Form1.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Form1.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T15:17:08.845Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Empleados.cs",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Empleados.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Empleados.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Empleados.cs",
+              "RelativeToolTip": "Restaurante\\Empleados.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:41:18.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Clientes.cs",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Clientes.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Clientes.cs",
+              "RelativeToolTip": "Restaurante\\Clientes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:06:36.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Clientes.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Clientes.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Clientes.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Clientes.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Clientes.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:06:31.082Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Inicio.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Inicio.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Inicio.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Inicio.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Inicio.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T15:01:17.72Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Comandas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Comandas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Comandas.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Comandas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Comandas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T14:55:36.184Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Empleados.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Empleados.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Empleados.cs",
+              "ToolTip": "C:\\Users\\Alexi\\source\\repos\\Restaurante\\Restaurante\\Empleados.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Empleados.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T02:40:30.388Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
