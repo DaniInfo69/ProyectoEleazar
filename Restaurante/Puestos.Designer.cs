@@ -30,80 +30,72 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.dgvPuestos = new System.Windows.Forms.DataGridView();
+            this.txtIdPuesto = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtPuesto = new System.Windows.Forms.TextBox();
+            this.IdPuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(104, 96);
+            this.label1.Location = new System.Drawing.Point(255, 99);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
+            this.label1.Size = new System.Drawing.Size(86, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "IdPuesto";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(118, 212);
+            this.label2.Location = new System.Drawing.Point(269, 215);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 29);
+            this.label2.Size = new System.Drawing.Size(69, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Puesto";
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(766, 404);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 80);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.Location = new System.Drawing.Point(656, 341);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(115, 80);
+            this.btnAgregar.TabIndex = 2;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // dataGridView1
+            // dgvPuestos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(121, 353);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(609, 381);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPuestos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdPuesto,
+            this.Puesto});
+            this.dgvPuestos.Location = new System.Drawing.Point(36, 306);
+            this.dgvPuestos.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dgvPuestos.Name = "dgvPuestos";
+            this.dgvPuestos.RowHeadersWidth = 51;
+            this.dgvPuestos.RowTemplate.Height = 24;
+            this.dgvPuestos.Size = new System.Drawing.Size(500, 293);
+            this.dgvPuestos.TabIndex = 3;
             // 
-            // textBox1
+            // txtIdPuesto
             // 
-            this.textBox1.Location = new System.Drawing.Point(235, 96);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 33);
-            this.textBox1.TabIndex = 4;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Jefe(Encargado)",
-            "Mesero",
-            "Cocinero"});
-            this.comboBox1.Location = new System.Drawing.Point(235, 198);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(150, 37);
-            this.comboBox1.TabIndex = 5;
+            this.txtIdPuesto.Location = new System.Drawing.Point(386, 99);
+            this.txtIdPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIdPuesto.Name = "txtIdPuesto";
+            this.txtIdPuesto.Size = new System.Drawing.Size(150, 35);
+            this.txtIdPuesto.TabIndex = 4;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(766, 654);
+            this.button2.Location = new System.Drawing.Point(656, 465);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(115, 80);
@@ -111,35 +103,49 @@
             this.button2.Text = "Eliminar";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // txtPuesto
             // 
-            this.button3.Location = new System.Drawing.Point(766, 533);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 80);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Consultar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.txtPuesto.Location = new System.Drawing.Point(386, 212);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(150, 35);
+            this.txtPuesto.TabIndex = 8;
+            // 
+            // IdPuesto
+            // 
+            this.IdPuesto.HeaderText = "IdPuesto";
+            this.IdPuesto.MinimumWidth = 7;
+            this.IdPuesto.Name = "IdPuesto";
+            this.IdPuesto.ReadOnly = true;
+            this.IdPuesto.Width = 135;
+            // 
+            // Puesto
+            // 
+            this.Puesto.HeaderText = "Puesto";
+            this.Puesto.MinimumWidth = 7;
+            this.Puesto.Name = "Puesto";
+            this.Puesto.ReadOnly = true;
+            this.Puesto.Width = 135;
             // 
             // Puestos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
-            this.ClientSize = new System.Drawing.Size(1000, 816);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(871, 687);
+            this.Controls.Add(this.txtPuesto);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtIdPuesto);
+            this.Controls.Add(this.dgvPuestos);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Sitka Banner", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Puestos";
             this.Text = "Puestos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Puestos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,11 +155,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.DataGridView dgvPuestos;
+        private System.Windows.Forms.TextBox txtIdPuesto;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtPuesto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdPuesto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Puesto;
     }
 }

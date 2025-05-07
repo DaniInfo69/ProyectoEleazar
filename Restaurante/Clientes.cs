@@ -49,7 +49,7 @@ namespace Restaurante
             String CP = txCP.Text;
             conexion.Open();
             //Esto sirve para hacer la insercion de Datos
-            comando = new SqlCommand("Insert into Clientes(Nombre, Telefono, Colonia, DomicilioCliente, CP) values " +
+            comando = new SqlCommand("Insert into Clientes (Nombre, Telefono, Colonia, DomicilioCliente, CP) values " +
                 "('" + Nombre + "' , '" + Telefono + "' , '" + Colonia + "' , '" + Domicilio + "', '" + CP + "')", conexion);
             comando.ExecuteNonQuery();
 
@@ -61,7 +61,6 @@ namespace Restaurante
             SqlCommand comandoContador = new SqlCommand("Select COUNT(*) from Clientes", conexion);
             int total = 0;
             total = Convert.ToInt32(comandoContador.ExecuteScalar()) + 1;
-            //Nombre del text boton
             txIdCliente.Text = total.ToString();
 
             lector = comando.ExecuteReader();
