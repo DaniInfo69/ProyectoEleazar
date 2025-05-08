@@ -3,28 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\puestos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\puestos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\puestos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\puestos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\inicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 391,
+          "DockedWidth": 270,
           "SelectedChildIndex": 3,
           "Children": [
             {
@@ -47,82 +35,39 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Empleados.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Empleados.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Empleados.cs",
-              "RelativeToolTip": "Restaurante\\Empleados.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAA3wEQAAACtAAAAAAAAAA==",
+              "Title": "Inicio.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Inicio.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Inicio.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Inicio.cs",
+              "RelativeToolTip": "Restaurante\\Inicio.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAIA2wC4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T19:04:21.721Z",
+              "WhenOpened": "2025-05-08T20:51:25.854Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Empleados.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Empleados.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Empleados.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Empleados.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Empleados.cs [Dise\u00F1o]",
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Menu.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Menu.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Menu.cs",
+              "RelativeToolTip": "Restaurante\\Menu.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAMwI4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:53:44.354Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Puestos.cs",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Puestos.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Puestos.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Puestos.cs",
-              "RelativeToolTip": "Restaurante\\Puestos.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwDcAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:41:25.265Z",
+              "WhenOpened": "2025-05-08T20:41:54.147Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Puestos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Puestos.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Puestos.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Puestos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Puestos.cs [Dise\u00F1o]",
+              "Title": "Menu.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Menu.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Menu.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Menu.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Menu.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:41:20.649Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 9,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Clientes.cs",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Clientes.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Clientes.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Clientes.cs",
-              "RelativeToolTip": "Restaurante\\Clientes.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwD8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:40:45.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Clientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Clientes.cs",
-              "RelativeDocumentMoniker": "Restaurante\\Clientes.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Clientes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\Clientes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T18:40:43.277Z",
+              "WhenOpened": "2025-05-08T20:38:16.44Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]

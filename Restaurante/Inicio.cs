@@ -40,5 +40,11 @@ namespace Restaurante
             Puestos puestos = new Puestos();
             puestos.ShowDialog();
         }
+
+        private void btnMenus_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            menu.ShowDialog();
+        }
     }
 }
