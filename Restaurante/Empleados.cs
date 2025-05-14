@@ -95,12 +95,91 @@ namespace Restaurante
         {
             conexion.Open();
 
-            comando = new SqlCommand("Select IdPuesto From Puestos", conexion);
+            comando = new SqlCommand("Select IdPuesto From Puestos where Puesto ='" + cboPuesto.Text + "'", conexion);
             lector = comando.ExecuteReader();
             while (lector.Read())
                 txIdPuesto.Text = lector["IdPuesto"].ToString();
 
             conexion.Close();
+        }
+        private void dgvEmpleados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Obtener la fila seleccionada
+                DataGridViewRow row = dgvEmpleados.Rows[e.RowIndex];
+
+                // Obtener los valores de las celdas
+                txtIdEmpleado.Text = row.Cells[0].Value.ToString();
+                cboPuesto.Text = row.Cells[1].Value.ToString();
+                txtNombre.Text = row.Cells[2].Value.ToString();
+                txtApellidos.Text = row.Cells[3].Value.ToString();
+                txtTelefono.Text = row.Cells[4].Value.ToString();
+                txtEmail.Text = row.Cells[5].Value.ToString();
+
+
+                btnAgregar.Enabled = false;
+                btnModificar.Enabled = true;
+                btnCancelar.Enabled = true;
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            String ID = txtIdEmpleado.Text;
+
+            String IdPuesto = txIdPuesto.Text;
+            String Nombre = txtNombre.Text;
+            String Apellidos = txtApellidos.Text;
+            String Telefono = txtTelefono.Text;
+            String Email = txtEmail.Text;
+            string cadena = "Update Empleados set IdPuesto ='" + IdPuesto + "', Nombre ='" + Nombre + "', Apellidos ='" + Apellidos + "', " +
+                           "Telefono ='" + Telefono + "', Email ='" + Email + "' WHERE IdEmpleado =" + Convert.ToInt32(ID);
+            MessageBox.Show(cadena);
+
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.ExecuteNonQuery();
+
+            SqlCommand comandoContador = new SqlCommand("Select COUNT(*) from Empleados", conexion);
+            int total = 0;
+            total = Convert.ToInt32(comandoContador.ExecuteScalar()) + 1;
+            //Nombre del text boton
+            txtIdEmpleado.Text = total.ToString();
+
+            MessageBox.Show("Los datos se modificaron correctamente");
+            dgvEmpleados.Rows.Clear();
+            SqlCommand comandoLector = new SqlCommand("SELECT IdEmpleado, P.Puesto, Nombre, Apellidos, Telefono, Email FROM Empleados as E inner join Puestos as P on P.IdPuesto = E.IdPuesto", conexion);
+            SqlDataReader lector;
+            lector = comandoLector.ExecuteReader();
+
+            while (lector.Read())
+                dgvEmpleados.Rows.Add(lector.GetValue(0).ToString(), lector.GetValue(1).ToString(), lector.GetValue(2).ToString(), lector.GetValue(3).ToString(), lector.GetValue(4).ToString(), lector.GetValue(5).ToString());
+
+
+            conexion.Close();
+
+            clean();
+        }
+
+        public void clean()
+        {
+            txtIdEmpleado.Text = "";
+            cboPuesto.Text = "";
+            txtNombre.Text = "";
+            txtApellidos.Text = "";
+            txtTelefono.Text = "";
+            txtEmail.Text = "";
+            txIdPuesto.Text = "";
+
+            btnCancelar.Enabled = false;
+            btnModificar.Enabled = false;
+            btnAgregar.Enabled = true;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            clean();
         }
     }
 }

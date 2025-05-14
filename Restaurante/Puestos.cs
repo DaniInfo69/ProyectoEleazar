@@ -78,5 +78,70 @@ namespace Restaurante
 
             txtPuesto.Text = "";
         }
+
+        private void dgvPuestos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                // Obtener la fila seleccionada
+                DataGridViewRow row = dgvPuestos.Rows[e.RowIndex];
+
+                // Obtener los valores de las celdas
+                txtIdPuesto.Text = row.Cells[0].Value.ToString();
+                txtPuesto.Text = row.Cells[1].Value.ToString();
+
+                btnAgregar.Enabled = false;
+                btnModificar.Enabled = true;
+                btnCancelar.Enabled = true;
+            }
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            conexion.Open();
+            String ID = txtIdPuesto.Text;
+            String Puesto = txtPuesto.Text;
+            string cadena = "Update Puestos set Puesto ='" + Puesto + "' WHERE IdPuesto =" + Convert.ToInt32(ID);
+
+            MessageBox.Show(cadena);
+
+            SqlCommand comando = new SqlCommand(cadena, conexion);
+            comando.ExecuteNonQuery();
+
+            SqlCommand comandoContador = new SqlCommand("Select COUNT(*) from Puestos", conexion);
+            int total = 0;
+            total = Convert.ToInt32(comandoContador.ExecuteScalar()) + 1;
+            //Nombre del text boton
+            txtIdPuesto.Text = total.ToString();
+
+            MessageBox.Show("Los datos se modificaron correctamente");
+            dgvPuestos.Rows.Clear();
+            SqlCommand comandoLector = new SqlCommand("Select * from Puestos", conexion);
+            SqlDataReader lector;
+            lector = comandoLector.ExecuteReader();
+
+            while (lector.Read())
+                dgvPuestos.Rows.Add(lector.GetValue(0),
+                lector.GetValue(1));
+
+            conexion.Close();
+
+            clean();
+        }
+
+        public void clean()
+        {
+            txtIdPuesto.Text = "";
+            txtPuesto.Text = "";
+
+            btnCancelar.Enabled = false;
+            btnModificar.Enabled = false;
+            btnAgregar.Enabled = true;
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            clean();
+        }
     }
 }

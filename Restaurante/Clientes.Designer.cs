@@ -50,6 +50,8 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +63,7 @@
             this.label1.Location = new System.Drawing.Point(74, 156);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 25);
+            this.label1.Size = new System.Drawing.Size(98, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "IdCliente";
             // 
@@ -72,7 +74,7 @@
             this.label2.Location = new System.Drawing.Point(478, 150);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 25);
+            this.label2.Size = new System.Drawing.Size(90, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
             // 
@@ -83,7 +85,7 @@
             this.label3.Location = new System.Drawing.Point(480, 233);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 25);
+            this.label3.Size = new System.Drawing.Size(86, 26);
             this.label3.TabIndex = 2;
             this.label3.Text = "Colonia";
             // 
@@ -94,7 +96,7 @@
             this.label4.Location = new System.Drawing.Point(74, 228);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 25);
+            this.label4.Size = new System.Drawing.Size(95, 26);
             this.label4.TabIndex = 3;
             this.label4.Text = "Telefono";
             // 
@@ -105,7 +107,7 @@
             this.label5.Location = new System.Drawing.Point(74, 312);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(183, 25);
+            this.label5.Size = new System.Drawing.Size(206, 26);
             this.label5.TabIndex = 4;
             this.label5.Text = "Domicilio de Cliente";
             // 
@@ -116,7 +118,7 @@
             this.label6.Location = new System.Drawing.Point(546, 314);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 25);
+            this.label6.Size = new System.Drawing.Size(43, 26);
             this.label6.TabIndex = 5;
             this.label6.Text = "CP";
             // 
@@ -127,7 +129,7 @@
             this.txIdCliente.Location = new System.Drawing.Point(219, 150);
             this.txIdCliente.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txIdCliente.Name = "txIdCliente";
-            this.txIdCliente.Size = new System.Drawing.Size(124, 30);
+            this.txIdCliente.Size = new System.Drawing.Size(124, 32);
             this.txIdCliente.TabIndex = 6;
             // 
             // txColonia
@@ -136,7 +138,7 @@
             this.txColonia.Location = new System.Drawing.Point(626, 233);
             this.txColonia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txColonia.Name = "txColonia";
-            this.txColonia.Size = new System.Drawing.Size(124, 30);
+            this.txColonia.Size = new System.Drawing.Size(124, 32);
             this.txColonia.TabIndex = 7;
             // 
             // txTelefono
@@ -145,7 +147,7 @@
             this.txTelefono.Location = new System.Drawing.Point(219, 228);
             this.txTelefono.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txTelefono.Name = "txTelefono";
-            this.txTelefono.Size = new System.Drawing.Size(124, 30);
+            this.txTelefono.Size = new System.Drawing.Size(124, 32);
             this.txTelefono.TabIndex = 8;
             // 
             // txNombre
@@ -154,7 +156,7 @@
             this.txNombre.Location = new System.Drawing.Point(626, 156);
             this.txNombre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txNombre.Name = "txNombre";
-            this.txNombre.Size = new System.Drawing.Size(124, 30);
+            this.txNombre.Size = new System.Drawing.Size(124, 32);
             this.txNombre.TabIndex = 9;
             // 
             // txDomicilioC
@@ -163,7 +165,7 @@
             this.txDomicilioC.Location = new System.Drawing.Point(338, 309);
             this.txDomicilioC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txDomicilioC.Name = "txDomicilioC";
-            this.txDomicilioC.Size = new System.Drawing.Size(124, 30);
+            this.txDomicilioC.Size = new System.Drawing.Size(124, 32);
             this.txDomicilioC.TabIndex = 10;
             // 
             // txCP
@@ -172,7 +174,7 @@
             this.txCP.Location = new System.Drawing.Point(626, 314);
             this.txCP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txCP.Name = "txCP";
-            this.txCP.Size = new System.Drawing.Size(124, 30);
+            this.txCP.Size = new System.Drawing.Size(124, 32);
             this.txCP.TabIndex = 11;
             // 
             // dgvClientes
@@ -185,13 +187,14 @@
             this.Colonia,
             this.DomicilioCliente,
             this.CP});
-            this.dgvClientes.Location = new System.Drawing.Point(22, 408);
+            this.dgvClientes.Location = new System.Drawing.Point(79, 443);
             this.dgvClientes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvClientes.Name = "dgvClientes";
             this.dgvClientes.RowHeadersWidth = 51;
             this.dgvClientes.RowTemplate.Height = 24;
-            this.dgvClientes.Size = new System.Drawing.Size(798, 489);
+            this.dgvClientes.Size = new System.Drawing.Size(876, 293);
             this.dgvClientes.TabIndex = 12;
+            this.dgvClientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvClientes_CellContentClick);
             // 
             // IdCliente
             // 
@@ -243,7 +246,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(1002, 364);
+            this.btnAgregar.Location = new System.Drawing.Point(988, 443);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(139, 80);
@@ -259,7 +262,7 @@
             this.label7.Location = new System.Drawing.Point(208, 33);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(181, 61);
+            this.label7.Size = new System.Drawing.Size(201, 68);
             this.label7.TabIndex = 15;
             this.label7.Text = "Clientes";
             // 
@@ -274,12 +277,36 @@
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(360, 382);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(116, 54);
+            this.btnModificar.TabIndex = 26;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(591, 382);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(115, 54);
+            this.btnCancelar.TabIndex = 27;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
             // Clientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightPink;
             this.ClientSize = new System.Drawing.Size(1301, 765);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnAgregar);
@@ -332,6 +359,8 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }
 

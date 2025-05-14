@@ -32,18 +32,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dgvPuestos = new System.Windows.Forms.DataGridView();
-            this.txtIdPuesto = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.txtPuesto = new System.Windows.Forms.TextBox();
             this.IdPuesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Puesto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtIdPuesto = new System.Windows.Forms.TextBox();
+            this.txtPuesto = new System.Windows.Forms.TextBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(255, 99);
+            this.label1.Location = new System.Drawing.Point(255, 66);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 32);
@@ -53,7 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(269, 215);
+            this.label2.Location = new System.Drawing.Point(269, 182);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 32);
@@ -62,10 +63,10 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(656, 341);
+            this.btnAgregar.Location = new System.Drawing.Point(570, 321);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(115, 80);
+            this.btnAgregar.Size = new System.Drawing.Size(119, 59);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -84,32 +85,7 @@
             this.dgvPuestos.RowTemplate.Height = 24;
             this.dgvPuestos.Size = new System.Drawing.Size(500, 293);
             this.dgvPuestos.TabIndex = 3;
-            // 
-            // txtIdPuesto
-            // 
-            this.txtIdPuesto.Location = new System.Drawing.Point(386, 99);
-            this.txtIdPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtIdPuesto.Name = "txtIdPuesto";
-            this.txtIdPuesto.Size = new System.Drawing.Size(150, 35);
-            this.txtIdPuesto.TabIndex = 4;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(656, 465);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 80);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // txtPuesto
-            // 
-            this.txtPuesto.Location = new System.Drawing.Point(386, 212);
-            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPuesto.Name = "txtPuesto";
-            this.txtPuesto.Size = new System.Drawing.Size(150, 35);
-            this.txtPuesto.TabIndex = 8;
+            this.dgvPuestos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPuestos_CellContentClick);
             // 
             // IdPuesto
             // 
@@ -127,14 +103,51 @@
             this.Puesto.ReadOnly = true;
             this.Puesto.Width = 135;
             // 
+            // txtIdPuesto
+            // 
+            this.txtIdPuesto.Location = new System.Drawing.Point(386, 66);
+            this.txtIdPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtIdPuesto.Name = "txtIdPuesto";
+            this.txtIdPuesto.Size = new System.Drawing.Size(150, 35);
+            this.txtIdPuesto.TabIndex = 4;
+            // 
+            // txtPuesto
+            // 
+            this.txtPuesto.Location = new System.Drawing.Point(386, 179);
+            this.txtPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPuesto.Name = "txtPuesto";
+            this.txtPuesto.Size = new System.Drawing.Size(150, 35);
+            this.txtPuesto.TabIndex = 8;
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Location = new System.Drawing.Point(476, 246);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(119, 52);
+            this.btnCancelar.TabIndex = 11;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.Location = new System.Drawing.Point(284, 246);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(119, 52);
+            this.btnModificar.TabIndex = 10;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
             // Puestos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Pink;
             this.ClientSize = new System.Drawing.Size(871, 687);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.txtPuesto);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.txtIdPuesto);
             this.Controls.Add(this.dgvPuestos);
             this.Controls.Add(this.btnAgregar);
@@ -158,9 +171,10 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.DataGridView dgvPuestos;
         private System.Windows.Forms.TextBox txtIdPuesto;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox txtPuesto;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdPuesto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Puesto;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnModificar;
     }
 }
