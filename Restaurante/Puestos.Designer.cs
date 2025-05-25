@@ -105,6 +105,7 @@
             // 
             // txtIdPuesto
             // 
+            this.txtIdPuesto.Enabled = false;
             this.txtIdPuesto.Location = new System.Drawing.Point(386, 66);
             this.txtIdPuesto.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtIdPuesto.Name = "txtIdPuesto";

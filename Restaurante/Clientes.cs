@@ -49,8 +49,8 @@ namespace Restaurante
             String CP = txCP.Text;
             conexion.Open();
             //Esto sirve para hacer la insercion de Datos
-            comando = new SqlCommand("Insert into Clientes (Nombre, Telefono, Colonia, DomicilioCliente, CP) values " +
-                "('" + Nombre + "' , '" + Telefono + "' , '" + Colonia + "' , '" + Domicilio + "', '" + CP + "')", conexion);
+            comando = new SqlCommand("Insert into Clientes (Nombre, Telefono, Colonia, DomicilioCliente, CP, Estado) values " +
+                "('" + Nombre + "' , '" + Telefono + "' , '" + Colonia + "' , '" + Domicilio + "', '" + CP + "', 'L')", conexion);
             comando.ExecuteNonQuery();
 
             //Esto sirve para consultar los datos y llenar la tabla

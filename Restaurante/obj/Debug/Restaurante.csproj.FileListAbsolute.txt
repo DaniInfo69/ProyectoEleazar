@@ -28,3 +28,4 @@ C:\Users\Pc\Desktop\Programacion\Eleazar\Restaurante\Restaurante\obj\Debug\Resta
 C:\Users\Pc\Desktop\Programacion\Eleazar\Restaurante\Restaurante\obj\Debug\Restaurante.exe
 C:\Users\Pc\Desktop\Programacion\Eleazar\Restaurante\Restaurante\obj\Debug\Restaurante.pdb
 C:\Users\Pc\Desktop\Programacion\Eleazar\Restaurante\Restaurante\obj\Debug\Restaurante.Menu.resources
+C:\Users\Pc\Desktop\Programacion\Eleazar\Restaurante\Restaurante\obj\Debug\Restaurante.ConsultaComandas.resources

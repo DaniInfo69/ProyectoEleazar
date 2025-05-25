@@ -52,6 +52,12 @@
     <Compile Include="Comandas.Designer.cs">
       <DependentUpon>Comandas.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultaComandas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaComandas.Designer.cs">
+      <DependentUpon>ConsultaComandas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Comandas.resx">
       <DependentUpon>Comandas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaComandas.resx">
+      <DependentUpon>ConsultaComandas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
