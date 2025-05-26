@@ -31,6 +31,13 @@
             this.cboIdComanda = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dgvComanda = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvDetalleComanda = new System.Windows.Forms.DataGridView();
             this.IdComanda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdMenu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,16 +47,10 @@
             this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.rbtnActivas = new System.Windows.Forms.RadioButton();
             this.rbtnCanceladas = new System.Windows.Forms.RadioButton();
             this.rbtnPagadas = new System.Windows.Forms.RadioButton();
-            this.rbtnActivas = new System.Windows.Forms.RadioButton();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rbtnGeneral = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComanda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleComanda)).BeginInit();
             this.groupBox5.SuspendLayout();
@@ -58,10 +59,10 @@
             // cboIdComanda
             // 
             this.cboIdComanda.FormattingEnabled = true;
-            this.cboIdComanda.Location = new System.Drawing.Point(599, 410);
-            this.cboIdComanda.Margin = new System.Windows.Forms.Padding(4);
+            this.cboIdComanda.Location = new System.Drawing.Point(589, 446);
+            this.cboIdComanda.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.cboIdComanda.Name = "cboIdComanda";
-            this.cboIdComanda.Size = new System.Drawing.Size(132, 24);
+            this.cboIdComanda.Size = new System.Drawing.Size(180, 40);
             this.cboIdComanda.TabIndex = 43;
             this.cboIdComanda.SelectedIndexChanged += new System.EventHandler(this.cboIdComanda_SelectedIndexChanged);
             // 
@@ -69,15 +70,17 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(514, 413);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(472, 452);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 16);
+            this.label4.Size = new System.Drawing.Size(110, 32);
             this.label4.TabIndex = 42;
             this.label4.Text = "IdComanda";
             // 
             // dgvComanda
             // 
+            this.dgvComanda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvComanda.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -87,14 +90,66 @@
             this.Column6,
             this.Column7,
             this.Column8});
-            this.dgvComanda.Location = new System.Drawing.Point(72, 215);
+            this.dgvComanda.Location = new System.Drawing.Point(76, 154);
+            this.dgvComanda.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dgvComanda.Name = "dgvComanda";
             this.dgvComanda.RowHeadersWidth = 45;
-            this.dgvComanda.Size = new System.Drawing.Size(1169, 163);
+            this.dgvComanda.Size = new System.Drawing.Size(1206, 278);
             this.dgvComanda.TabIndex = 41;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "IdComanda";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Empleado";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Fecha";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "SubTotal";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "IVA";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Total";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Estado";
+            this.Column8.MinimumWidth = 6;
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
             // 
             // dgvDetalleComanda
             // 
+            this.dgvDetalleComanda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDetalleComanda.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvDetalleComanda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleComanda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdComanda,
@@ -103,10 +158,11 @@
             this.Cantidad,
             this.Precio,
             this.Importe});
-            this.dgvDetalleComanda.Location = new System.Drawing.Point(236, 452);
+            this.dgvDetalleComanda.Location = new System.Drawing.Point(76, 528);
+            this.dgvDetalleComanda.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dgvDetalleComanda.Name = "dgvDetalleComanda";
             this.dgvDetalleComanda.RowHeadersWidth = 45;
-            this.dgvDetalleComanda.Size = new System.Drawing.Size(810, 163);
+            this.dgvDetalleComanda.Size = new System.Drawing.Size(1212, 220);
             this.dgvDetalleComanda.TabIndex = 40;
             // 
             // IdComanda
@@ -114,7 +170,6 @@
             this.IdComanda.HeaderText = "IdComanda";
             this.IdComanda.MinimumWidth = 6;
             this.IdComanda.Name = "IdComanda";
-            this.IdComanda.Width = 110;
             // 
             // IdMenu
             // 
@@ -122,7 +177,6 @@
             this.IdMenu.MinimumWidth = 6;
             this.IdMenu.Name = "IdMenu";
             this.IdMenu.ReadOnly = true;
-            this.IdMenu.Width = 80;
             // 
             // Descripción
             // 
@@ -130,7 +184,6 @@
             this.Descripción.MinimumWidth = 6;
             this.Descripción.Name = "Descripción";
             this.Descripción.ReadOnly = true;
-            this.Descripción.Width = 110;
             // 
             // Cantidad
             // 
@@ -138,7 +191,6 @@
             this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 90;
             // 
             // Precio
             // 
@@ -146,7 +198,6 @@
             this.Precio.MinimumWidth = 6;
             this.Precio.Name = "Precio";
             this.Precio.ReadOnly = true;
-            this.Precio.Width = 90;
             // 
             // Importe
             // 
@@ -154,14 +205,13 @@
             this.Importe.MinimumWidth = 6;
             this.Importe.Name = "Importe";
             this.Importe.ReadOnly = true;
-            this.Importe.Width = 90;
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(37, 13);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(76, 17);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(119, 66);
+            this.btnSalir.Size = new System.Drawing.Size(131, 53);
             this.btnSalir.TabIndex = 39;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -169,24 +219,40 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.rbtnGeneral);
             this.groupBox5.Controls.Add(this.rbtnActivas);
             this.groupBox5.Controls.Add(this.rbtnCanceladas);
             this.groupBox5.Controls.Add(this.rbtnPagadas);
-            this.groupBox5.Location = new System.Drawing.Point(527, 72);
+            this.groupBox5.Location = new System.Drawing.Point(445, 26);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(126, 122);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.groupBox5.Size = new System.Drawing.Size(397, 127);
             this.groupBox5.TabIndex = 28;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Filtro";
+            // 
+            // rbtnActivas
+            // 
+            this.rbtnActivas.AutoSize = true;
+            this.rbtnActivas.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnActivas.Location = new System.Drawing.Point(282, 40);
+            this.rbtnActivas.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.rbtnActivas.Name = "rbtnActivas";
+            this.rbtnActivas.Size = new System.Drawing.Size(93, 36);
+            this.rbtnActivas.TabIndex = 25;
+            this.rbtnActivas.Text = "Activas";
+            this.rbtnActivas.UseVisualStyleBackColor = false;
+            this.rbtnActivas.CheckedChanged += new System.EventHandler(this.rbtnActivas_CheckedChanged);
             // 
             // rbtnCanceladas
             // 
             this.rbtnCanceladas.AutoSize = true;
             this.rbtnCanceladas.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnCanceladas.Location = new System.Drawing.Point(17, 53);
-            this.rbtnCanceladas.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnCanceladas.Location = new System.Drawing.Point(144, 40);
+            this.rbtnCanceladas.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.rbtnCanceladas.Name = "rbtnCanceladas";
-            this.rbtnCanceladas.Size = new System.Drawing.Size(101, 20);
+            this.rbtnCanceladas.Size = new System.Drawing.Size(126, 36);
             this.rbtnCanceladas.TabIndex = 24;
             this.rbtnCanceladas.Text = "Canceladas";
             this.rbtnCanceladas.UseVisualStyleBackColor = false;
@@ -196,95 +262,44 @@
             // 
             this.rbtnPagadas.AutoSize = true;
             this.rbtnPagadas.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnPagadas.Location = new System.Drawing.Point(17, 22);
-            this.rbtnPagadas.Margin = new System.Windows.Forms.Padding(4);
+            this.rbtnPagadas.Location = new System.Drawing.Point(30, 40);
+            this.rbtnPagadas.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
             this.rbtnPagadas.Name = "rbtnPagadas";
-            this.rbtnPagadas.Size = new System.Drawing.Size(84, 20);
+            this.rbtnPagadas.Size = new System.Drawing.Size(102, 36);
             this.rbtnPagadas.TabIndex = 23;
             this.rbtnPagadas.Text = "Pagadas";
             this.rbtnPagadas.UseVisualStyleBackColor = false;
             this.rbtnPagadas.CheckedChanged += new System.EventHandler(this.rbtnPagadas_CheckedChanged);
             // 
-            // rbtnActivas
+            // rbtnGeneral
             // 
-            this.rbtnActivas.AutoSize = true;
-            this.rbtnActivas.BackColor = System.Drawing.Color.Transparent;
-            this.rbtnActivas.Location = new System.Drawing.Point(18, 81);
-            this.rbtnActivas.Margin = new System.Windows.Forms.Padding(4);
-            this.rbtnActivas.Name = "rbtnActivas";
-            this.rbtnActivas.Size = new System.Drawing.Size(72, 20);
-            this.rbtnActivas.TabIndex = 25;
-            this.rbtnActivas.Text = "Activas";
-            this.rbtnActivas.UseVisualStyleBackColor = false;
-            this.rbtnActivas.CheckedChanged += new System.EventHandler(this.rbtnActivas_CheckedChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "IdComanda";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 110;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Empleado";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            this.Column2.Width = 110;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Fecha";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            this.Column4.Width = 95;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "SubTotal";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            this.Column5.Width = 85;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "IVA";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            this.Column6.Width = 85;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Total";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            this.Column7.Width = 85;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Estado";
-            this.Column8.MinimumWidth = 6;
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 65;
+            this.rbtnGeneral.AutoSize = true;
+            this.rbtnGeneral.BackColor = System.Drawing.Color.Transparent;
+            this.rbtnGeneral.Checked = true;
+            this.rbtnGeneral.Location = new System.Drawing.Point(156, 78);
+            this.rbtnGeneral.Margin = new System.Windows.Forms.Padding(6, 8, 6, 8);
+            this.rbtnGeneral.Name = "rbtnGeneral";
+            this.rbtnGeneral.Size = new System.Drawing.Size(100, 36);
+            this.rbtnGeneral.TabIndex = 26;
+            this.rbtnGeneral.TabStop = true;
+            this.rbtnGeneral.Text = "General";
+            this.rbtnGeneral.UseVisualStyleBackColor = false;
+            this.rbtnGeneral.CheckedChanged += new System.EventHandler(this.rbtnGeneral_CheckedChanged);
             // 
             // ConsultaComandas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 721);
+            this.BackColor = System.Drawing.Color.Pink;
+            this.ClientSize = new System.Drawing.Size(1448, 787);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.cboIdComanda);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dgvComanda);
             this.Controls.Add(this.dgvDetalleComanda);
             this.Controls.Add(this.btnSalir);
+            this.Font = new System.Drawing.Font("Sitka Banner", 12F);
+            this.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.Name = "ConsultaComandas";
             this.Text = "ConsultaComandas";
             this.Load += new System.EventHandler(this.ConsultaComandas_Load);
@@ -321,5 +336,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.RadioButton rbtnGeneral;
     }
 }

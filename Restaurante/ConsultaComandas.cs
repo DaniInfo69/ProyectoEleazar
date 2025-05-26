@@ -24,17 +24,7 @@ namespace Restaurante
 
         private void ConsultaComandas_Load(object sender, EventArgs e)
         {
-            conexion.Open();
-
-            comando = new SqlCommand("Select C.IdComanda, E.Nombre, C.Fecha, C.Subtotal, C.IVA, C.Total, C.Estado From Comandas as C inner join Empleados as E on E.IdEmpleado = C.IdEmpleado", conexion);
-            lector = comando.ExecuteReader();
-
-            while (lector.Read())
-            {
-                dgvComanda.Rows.Add(lector[0].ToString(), lector[1].ToString(), lector[2].ToString(), lector[3].ToString(), lector[4].ToString(), lector[5].ToString(), lector[6].ToString());
-            }
-
-            conexion.Close();
+            consultarPagCan("G");
         }
 
         private void btnSalir_Click(object sender, EventArgs e)
@@ -55,13 +45,24 @@ namespace Restaurante
         {
             consultarPagCan("A");
         }
+       private void rbtnGeneral_CheckedChanged(object sender, EventArgs e)
+        {
+            consultarPagCan("G");
+        }
 
         private void consultarPagCan(string Estado)
         {
             conexion.Open();
             dgvComanda.Rows.Clear();
             cboIdComanda.Items.Clear();
-            comando = new SqlCommand("Select C.IdComanda, E.Nombre, C.Fecha, C.Subtotal, C.IVA, C.Total, C.Estado From Comandas as C inner join Empleados as E on E.IdEmpleado = C.IdEmpleado Where C.Estado = '" + Estado + "'", conexion);
+            if (Estado == "G")
+            {
+                comando = new SqlCommand("Select C.IdComanda, E.Nombre, C.Fecha, C.Subtotal, C.IVA, C.Total, C.Estado From Comandas as C inner join Empleados as E on E.IdEmpleado = C.IdEmpleado", conexion);
+            }
+            else
+            {
+                comando = new SqlCommand("Select C.IdComanda, E.Nombre, C.Fecha, C.Subtotal, C.IVA, C.Total, C.Estado From Comandas as C inner join Empleados as E on E.IdEmpleado = C.IdEmpleado Where C.Estado = '" + Estado + "'", conexion);
+            }
             lector = comando.ExecuteReader();
 
             while (lector.Read())
@@ -90,5 +91,7 @@ namespace Restaurante
         }
 
 
+
+ 
     }
 }

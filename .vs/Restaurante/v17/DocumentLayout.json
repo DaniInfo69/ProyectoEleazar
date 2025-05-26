@@ -1,15 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\consultacomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\consultacomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 267,
-          "SelectedChildIndex": -1,
+          "DockedWidth": 389,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsultaComandas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\ConsultaComandas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\ConsultaComandas.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\ConsultaComandas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\ConsultaComandas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T16:37:01.792Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

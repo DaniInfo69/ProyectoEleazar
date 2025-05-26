@@ -216,6 +216,49 @@ namespace Restaurante
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             grabarComanda();
+            clearData(false);
+            cargarCombos();
+            cargarIdComanda();
+            MessageBox.Show("Comanda registrada correctamente");
+        }
+
+        private void clearData(bool decicion)
+        {
+            txtIdComanda.Text = string.Empty;
+            txtSubtotal.Text = string.Empty;
+            txtIVA.Text = string.Empty;
+            txtTotal.Text = string.Empty;
+            txtIdCliente.Text = string.Empty;
+            txtNombreCliente.Text = string.Empty;
+            txtColonia.Text = string.Empty;
+            txtDomicilioC.Text = string.Empty;
+            txtIdEmpleado.Text = string.Empty;
+            txtNombreEmpleado.Text = string.Empty;
+            txtApellidos.Text = string.Empty;
+            txtPuesto.Text = string.Empty;
+            txtIdMenu.Text = string.Empty;
+            txtPrecio.Text = string.Empty;
+            cboNombreEmpleado.Text = string.Empty;
+            cboNombreCliente.Text = string.Empty;
+            cboDescripcion.Text = string.Empty;
+            cboClientesOcupados.Text = string.Empty;
+            dgvComandas1.Rows.Clear();
+
+            if (decicion)
+            {
+                txtNombreEmpleado.Visible = true;
+                txtNombreCliente.Visible = true;
+                cboNombreCliente.Visible = false;
+                cboNombreEmpleado.Visible = false;
+            }
+            else
+            {
+                txtNombreEmpleado.Visible = false;
+                txtNombreCliente.Visible = false;
+                cboNombreCliente.Visible = true;
+                cboNombreEmpleado.Visible = true;
+            }
+
         }
 
         //Comandas A = Activas, P = Pagadas , C = Canceladas
@@ -241,37 +284,34 @@ namespace Restaurante
 
         public void grabarDetalle()
         {
-            try
-            {
 
-                foreach (DataGridViewRow row in dgvComandas1.Rows)
+
+            foreach (DataGridViewRow row in dgvComandas1.Rows)
+            {
+                if (string.IsNullOrEmpty(Convert.ToString(row.Cells["IdComanda"].Value)))
                 {
-                    if (string.IsNullOrEmpty(Convert.ToString(row.Cells["IdComanda"].Value)))
-                    {
-                        break;
-                    }
-                    conexion.Open();
-
-                    comando.Parameters.Clear();
-                    string IdComanda = Convert.ToString(row.Cells["IdComanda"].Value);
-                    string IdMenu = Convert.ToString(row.Cells["IdMenu"].Value);
-                    string Cantidad = Convert.ToString(row.Cells["Cantidad"].Value);
-                    string Precio = Convert.ToString(row.Cells["Precio"].Value);
-
-                    comando = new SqlCommand("Insert into DetalleComanda values('" + IdComanda + "', '" + IdMenu + "', '" + Cantidad + "', '" + Precio + "')", conexion);
-                    comando.ExecuteNonQuery();
-                    conexion.Close();
-
+                    break;
                 }
+                conexion.Open();
+
+                comando.Parameters.Clear();
+                string IdComanda = Convert.ToString(row.Cells["IdComanda"].Value);
+                string IdMenu = Convert.ToString(row.Cells["IdMenu"].Value);
+                string Cantidad = Convert.ToString(row.Cells["Cantidad"].Value);
+                string Precio = Convert.ToString(row.Cells["Precio"].Value);
+                MessageBox.Show("Insert into DetalleComanda values('" + IdComanda + "', '" + IdMenu + "', '" + Cantidad + "', '" + Precio + "')");
+
+                comando = new SqlCommand("Insert into DetalleComanda values('" + IdComanda + "', '" + IdMenu + "', '" + Cantidad + "', '" + Precio + "')", conexion);
+                comando.ExecuteNonQuery();
+                conexion.Close();
 
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error al grabar el detalle de la comanda: " + ex.Message);
-            }
-
 
         }
+
+
+
+
 
         private void modificarEstadoCliente()
         {
@@ -286,23 +326,65 @@ namespace Restaurante
         private void cboClientesOcupados_SelectedIndexChanged(object sender, EventArgs e)
         {
             string nombre = cboClientesOcupados.Text;
-            ConsultarCliente(nombre);
-            consultarIdOcupado(nombre);
+            consultarOcupado(nombre);
             cboNombreCliente.Text = string.Empty;
             HabilitarMenu();
             btnPagar.Enabled = true;
             btnCancelar.Enabled = true;
+            btnRegistrar.Enabled = false;
         }
 
-        private void consultarIdOcupado(string nombre)
+        private void consultarOcupado(string nombre)
         {
+            clearData(true);
             conexion.Open();
-            comando = new SqlCommand("SELECT Co.IdComanda FROM Comandas as Co inner join Clientes as Cl on Cl.IdCliente = Co.IdEmpleado where Co.Estado = 'A' and Cl.Nombre = '" + nombre + "'", conexion);
+            comando = new SqlCommand("select Co.IdComanda, Co.Subtotal, Co.IVA, Co.Total, Co.IdCliente, Cl.Nombre, Cl.Colonia, Cl.DomicilioCliente, " +
+                "Co.IdEmpleado, Em.Nombre, Em.Apellidos, Pu.Puesto " +
+                "from Comandas as Co " +
+                "inner join Clientes as Cl on Co.IdCliente = Cl.IdCliente " +
+                "inner join Empleados as Em on Em.IdEmpleado = Co.IdEmpleado " +
+                "inner join Puestos as Pu on Pu.IdPuesto = Em.IdPuesto " +
+                "where Cl.Nombre = '" + nombre + "' and Co.Estado = 'A'", conexion);
             lector = comando.ExecuteReader();
             while (lector.Read())
             {
                 txtIdComanda.Text = lector[0].ToString();
+                txtSubtotal.Text = lector[1].ToString();
+                txtIVA.Text = lector[2].ToString();
+                txtTotal.Text = lector[3].ToString();
+                txtIdCliente.Text = lector[4].ToString();
+                txtNombreCliente.Text = lector[5].ToString();
+                txtColonia.Text = lector[6].ToString();
+                txtDomicilioC.Text = lector[7].ToString();
+                txtIdEmpleado.Text = lector[8].ToString();
+                txtNombreEmpleado.Text = lector[9].ToString();
+                txtApellidos.Text = lector[10].ToString();
+                txtPuesto.Text = lector[11].ToString();
             }
+            
+            conexion.Close();
+
+            consultarDetalleComanda(nombre);
+        }
+
+        private void consultarDetalleComanda(string nombre)
+        {
+            conexion.Open();
+            comando = new SqlCommand("select Co.IdComanda, Dc.IdMenu, Me.Descripcion, Dc.Cantidad, Dc.Precio " +
+                "from Comandas as Co " +
+                "inner join DetalleComanda as Dc on Dc.IdComanda = Co.IdComanda " +
+                "inner join Clientes as Cl on Co.IdCliente = Cl.IdCliente " +
+                "inner join Menu as Me on Me.IdMenu = Dc.IdMenu " +
+                "where Cl.Nombre = '" + nombre + "' and Co.Estado = 'A'", conexion);
+            lector = comando.ExecuteReader();
+
+            while (lector.Read())
+            {
+                double importe = Convert.ToDouble(lector.GetValue(3)) * Convert.ToDouble(lector.GetValue(4));
+                dgvComandas1.Rows.Add(lector.GetValue(0).ToString(), lector.GetValue(1).ToString(), lector.GetValue(2).ToString(), lector.GetValue(3).ToString(), lector.GetValue(4).ToString(), importe);
+
+            }
+
             conexion.Close();
         }
 
@@ -318,12 +400,18 @@ namespace Restaurante
             comando.ExecuteNonQuery();
 
             conexion.Close();
+
+            clearData(false);
+            cargarCombos();
+            cargarIdComanda();
+            btnCancelar.Enabled = false;
+            btnPagar.Enabled = false;
         }
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
             conexion.Open();
-            MessageBox.Show("La Comanda de " + cboClientesOcupados.Text + " ah sido cancelada");
+            MessageBox.Show("La Comanda de " + cboClientesOcupados.Text + " ah sido Pagada");
 
             comando = new SqlCommand("Update Clientes set Estado = 'L' Where Nombre = '" + cboClientesOcupados.Text + "'", conexion);
             comando.ExecuteNonQuery();
@@ -332,6 +420,12 @@ namespace Restaurante
             comando.ExecuteNonQuery();
 
             conexion.Close();
+
+            clearData(false);
+            cargarCombos();
+            cargarIdComanda();
+            btnCancelar.Enabled = false;
+            btnPagar.Enabled = false;
         }
 
         private void btnConsultas_Click(object sender, EventArgs e)

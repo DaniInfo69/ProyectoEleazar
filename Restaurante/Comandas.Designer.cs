@@ -40,6 +40,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cboNombreEmpleado = new System.Windows.Forms.ComboBox();
             this.txtPuesto = new System.Windows.Forms.TextBox();
+            this.txtNombreEmpleado = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cboDescripcion = new System.Windows.Forms.ComboBox();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -55,7 +56,9 @@
             this.txtDomicilioC = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtColonia = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.dgvComandas1 = new System.Windows.Forms.DataGridView();
             this.IdComanda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdMenu = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,7 +77,6 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cboClientesOcupados = new System.Windows.Forms.ComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.btnPagar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -184,6 +186,7 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtIdEmpleado);
+            this.groupBox1.Controls.Add(this.txtNombreEmpleado);
             this.groupBox1.Location = new System.Drawing.Point(21, 123);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(309, 247);
@@ -208,6 +211,16 @@
             this.txtPuesto.Name = "txtPuesto";
             this.txtPuesto.Size = new System.Drawing.Size(136, 35);
             this.txtPuesto.TabIndex = 41;
+            // 
+            // txtNombreEmpleado
+            // 
+            this.txtNombreEmpleado.Enabled = false;
+            this.txtNombreEmpleado.Location = new System.Drawing.Point(155, 105);
+            this.txtNombreEmpleado.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtNombreEmpleado.Name = "txtNombreEmpleado";
+            this.txtNombreEmpleado.Size = new System.Drawing.Size(121, 35);
+            this.txtNombreEmpleado.TabIndex = 43;
+            this.txtNombreEmpleado.Visible = false;
             // 
             // groupBox2
             // 
@@ -323,6 +336,7 @@
             this.groupBox3.Controls.Add(this.txtIdCliente);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.txtNombreCliente);
             this.groupBox3.Location = new System.Drawing.Point(351, 123);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(309, 247);
@@ -370,6 +384,17 @@
             this.txtColonia.Size = new System.Drawing.Size(124, 32);
             this.txtColonia.TabIndex = 48;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(27, 98);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 26);
+            this.label10.TabIndex = 43;
+            this.label10.Text = "Nombre";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -381,8 +406,20 @@
             this.label13.TabIndex = 46;
             this.label13.Text = "Colonia";
             // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Enabled = false;
+            this.txtNombreCliente.Location = new System.Drawing.Point(124, 91);
+            this.txtNombreCliente.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(121, 35);
+            this.txtNombreCliente.TabIndex = 44;
+            this.txtNombreCliente.Visible = false;
+            // 
             // dgvComandas1
             // 
+            this.dgvComandas1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvComandas1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgvComandas1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvComandas1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdComanda,
@@ -402,7 +439,6 @@
             this.IdComanda.HeaderText = "IdComanda";
             this.IdComanda.MinimumWidth = 6;
             this.IdComanda.Name = "IdComanda";
-            this.IdComanda.Width = 110;
             // 
             // IdMenu
             // 
@@ -410,7 +446,6 @@
             this.IdMenu.MinimumWidth = 6;
             this.IdMenu.Name = "IdMenu";
             this.IdMenu.ReadOnly = true;
-            this.IdMenu.Width = 80;
             // 
             // Descripción
             // 
@@ -418,7 +453,6 @@
             this.Descripción.MinimumWidth = 6;
             this.Descripción.Name = "Descripción";
             this.Descripción.ReadOnly = true;
-            this.Descripción.Width = 110;
             // 
             // Cantidad
             // 
@@ -426,7 +460,6 @@
             this.Cantidad.MinimumWidth = 6;
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.ReadOnly = true;
-            this.Cantidad.Width = 90;
             // 
             // Precio
             // 
@@ -434,7 +467,6 @@
             this.Precio.MinimumWidth = 6;
             this.Precio.Name = "Precio";
             this.Precio.ReadOnly = true;
-            this.Precio.Width = 90;
             // 
             // Importe
             // 
@@ -442,7 +474,6 @@
             this.Importe.MinimumWidth = 6;
             this.Importe.Name = "Importe";
             this.Importe.ReadOnly = true;
-            this.Importe.Width = 90;
             // 
             // txtSubtotal
             // 
@@ -510,7 +541,7 @@
             this.txtIdComanda.Location = new System.Drawing.Point(526, 79);
             this.txtIdComanda.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.txtIdComanda.Name = "txtIdComanda";
-            this.txtIdComanda.Size = new System.Drawing.Size(59, 35);
+            this.txtIdComanda.Size = new System.Drawing.Size(57, 35);
             this.txtIdComanda.TabIndex = 55;
             // 
             // label17
@@ -554,17 +585,6 @@
             this.cboClientesOcupados.TabIndex = 59;
             this.cboClientesOcupados.SelectedIndexChanged += new System.EventHandler(this.cboClientesOcupados_SelectedIndexChanged);
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(27, 98);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(90, 26);
-            this.label10.TabIndex = 43;
-            this.label10.Text = "Nombre";
-            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -600,7 +620,7 @@
             // 
             // btnConsultas
             // 
-            this.btnConsultas.Location = new System.Drawing.Point(942, 493);
+            this.btnConsultas.Location = new System.Drawing.Point(935, 493);
             this.btnConsultas.Name = "btnConsultas";
             this.btnConsultas.Size = new System.Drawing.Size(163, 98);
             this.btnConsultas.TabIndex = 63;
@@ -706,5 +726,7 @@
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnConsultas;
+        private System.Windows.Forms.TextBox txtNombreEmpleado;
+        private System.Windows.Forms.TextBox txtNombreCliente;
     }
 }
