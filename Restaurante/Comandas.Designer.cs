@@ -60,12 +60,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtNombreCliente = new System.Windows.Forms.TextBox();
             this.dgvComandas1 = new System.Windows.Forms.DataGridView();
-            this.IdComanda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdMenu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtSubtotal = new System.Windows.Forms.TextBox();
             this.txtIVA = new System.Windows.Forms.TextBox();
             this.txtTotal = new System.Windows.Forms.TextBox();
@@ -81,6 +75,12 @@
             this.btnPagar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnConsultas = new System.Windows.Forms.Button();
+            this.IdComanda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdMenu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Importe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -424,7 +424,7 @@
             this.dgvComandas1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdComanda,
             this.IdMenu,
-            this.Descripción,
+            this.Descripcion,
             this.Cantidad,
             this.Precio,
             this.Importe});
@@ -433,47 +433,6 @@
             this.dgvComandas1.RowHeadersWidth = 45;
             this.dgvComandas1.Size = new System.Drawing.Size(627, 163);
             this.dgvComandas1.TabIndex = 43;
-            // 
-            // IdComanda
-            // 
-            this.IdComanda.HeaderText = "IdComanda";
-            this.IdComanda.MinimumWidth = 6;
-            this.IdComanda.Name = "IdComanda";
-            // 
-            // IdMenu
-            // 
-            this.IdMenu.HeaderText = "IdMenú";
-            this.IdMenu.MinimumWidth = 6;
-            this.IdMenu.Name = "IdMenu";
-            this.IdMenu.ReadOnly = true;
-            // 
-            // Descripción
-            // 
-            this.Descripción.HeaderText = "Descripción";
-            this.Descripción.MinimumWidth = 6;
-            this.Descripción.Name = "Descripción";
-            this.Descripción.ReadOnly = true;
-            // 
-            // Cantidad
-            // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.MinimumWidth = 6;
-            this.Cantidad.Name = "Cantidad";
-            this.Cantidad.ReadOnly = true;
-            // 
-            // Precio
-            // 
-            this.Precio.HeaderText = "Precio";
-            this.Precio.MinimumWidth = 6;
-            this.Precio.Name = "Precio";
-            this.Precio.ReadOnly = true;
-            // 
-            // Importe
-            // 
-            this.Importe.HeaderText = "Importe";
-            this.Importe.MinimumWidth = 6;
-            this.Importe.Name = "Importe";
-            this.Importe.ReadOnly = true;
             // 
             // txtSubtotal
             // 
@@ -628,6 +587,47 @@
             this.btnConsultas.UseVisualStyleBackColor = true;
             this.btnConsultas.Click += new System.EventHandler(this.btnConsultas_Click);
             // 
+            // IdComanda
+            // 
+            this.IdComanda.HeaderText = "IdComanda";
+            this.IdComanda.MinimumWidth = 6;
+            this.IdComanda.Name = "IdComanda";
+            // 
+            // IdMenu
+            // 
+            this.IdMenu.HeaderText = "IdMenú";
+            this.IdMenu.MinimumWidth = 6;
+            this.IdMenu.Name = "IdMenu";
+            this.IdMenu.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripción";
+            this.Descripcion.MinimumWidth = 6;
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.HeaderText = "Cantidad";
+            this.Cantidad.MinimumWidth = 6;
+            this.Cantidad.Name = "Cantidad";
+            this.Cantidad.ReadOnly = true;
+            // 
+            // Precio
+            // 
+            this.Precio.HeaderText = "Precio";
+            this.Precio.MinimumWidth = 6;
+            this.Precio.Name = "Precio";
+            this.Precio.ReadOnly = true;
+            // 
+            // Importe
+            // 
+            this.Importe.HeaderText = "Importe";
+            this.Importe.MinimumWidth = 6;
+            this.Importe.Name = "Importe";
+            this.Importe.ReadOnly = true;
+            // 
             // Comandas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 32F);
@@ -704,12 +704,6 @@
         private System.Windows.Forms.ComboBox cboNombreCliente;
         private System.Windows.Forms.ComboBox cboDescripcion;
         private System.Windows.Forms.DataGridView dgvComandas1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdComanda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdMenu;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
         private System.Windows.Forms.TextBox txtSubtotal;
         private System.Windows.Forms.TextBox txtIVA;
         private System.Windows.Forms.TextBox txtTotal;
@@ -728,5 +722,11 @@
         private System.Windows.Forms.Button btnConsultas;
         private System.Windows.Forms.TextBox txtNombreEmpleado;
         private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdComanda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdMenu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
     }
 }

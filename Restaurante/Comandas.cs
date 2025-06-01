@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Restaurante
@@ -309,10 +302,6 @@ namespace Restaurante
 
         }
 
-
-
-
-
         private void modificarEstadoCliente()
         {
             conexion.Open();
@@ -361,7 +350,7 @@ namespace Restaurante
                 txtApellidos.Text = lector[10].ToString();
                 txtPuesto.Text = lector[11].ToString();
             }
-            
+
             conexion.Close();
 
             consultarDetalleComanda(nombre);
@@ -410,6 +399,7 @@ namespace Restaurante
 
         private void btnPagar_Click(object sender, EventArgs e)
         {
+            
             conexion.Open();
             MessageBox.Show("La Comanda de " + cboClientesOcupados.Text + " ah sido Pagada");
 
@@ -421,11 +411,15 @@ namespace Restaurante
 
             conexion.Close();
 
+            ClaseFactura factura = new ClaseFactura();
+            factura.GenerarFactura(txtNombreCliente.Text, txtNombreEmpleado.Text, dgvComandas1, Convert.ToDecimal(txtSubtotal.Text), Convert.ToDecimal(txtIVA.Text), Convert.ToDecimal(txtTotal.Text));
+
             clearData(false);
             cargarCombos();
             cargarIdComanda();
             btnCancelar.Enabled = false;
             btnPagar.Enabled = false;
+
         }
 
         private void btnConsultas_Click(object sender, EventArgs e)

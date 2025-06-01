@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\consultacomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\consultacomandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\comandas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|c:\\users\\pc\\desktop\\programacion\\eleazar\\restaurante\\restaurante\\clasefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DE936D6-8AE0-441C-8E16-899B5FA74FA8}|Restaurante\\Restaurante.csproj|solutionrelative:restaurante\\clasefactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +22,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 389,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Comandas.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Comandas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Comandas.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Comandas.cs",
+              "RelativeToolTip": "Restaurante\\Comandas.cs",
+              "ViewState": "AgIAAH0BAAAAAAAAAADwv5sBAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:24:49.017Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
@@ -30,14 +52,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ConsultaComandas.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\ConsultaComandas.cs",
-              "RelativeDocumentMoniker": "Restaurante\\ConsultaComandas.cs",
-              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\ConsultaComandas.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Restaurante\\ConsultaComandas.cs [Dise\u00F1o]",
+              "DocumentIndex": 2,
+              "Title": "ClaseFactura.cs",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\ClaseFactura.cs",
+              "RelativeDocumentMoniker": "Restaurante\\ClaseFactura.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\ClaseFactura.cs",
+              "RelativeToolTip": "Restaurante\\ClaseFactura.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T16:37:01.792Z",
+              "WhenOpened": "2025-06-01T21:00:33.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Comandas.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Comandas.cs",
+              "RelativeDocumentMoniker": "Restaurante\\Comandas.cs",
+              "ToolTip": "C:\\Users\\Pc\\Desktop\\Programacion\\Eleazar\\Restaurante\\Restaurante\\Comandas.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Restaurante\\Comandas.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T20:22:29.751Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
